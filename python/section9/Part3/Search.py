@@ -6,5 +6,5 @@ def check_list():
     except ValueError:
         print("Not found in our list")
     else:
-        print("found,position :",input_num)
+        print("found,position :",num_check)
 check_list()
