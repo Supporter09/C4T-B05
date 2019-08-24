@@ -69,8 +69,17 @@ def can_i_exit(answer):
 def choose_W():
     new_array[player][player_found] = "  -  "
     new_array[player-1][player_found] = "  P  "
-def option(array,user_input,count):
+def option(user_input,count):
     new_array = []
+    key_array = array[key]
+    player_array = array[player]
+    exit_array = array[exit1]
+    none_array = array[none]
+
+    key_found = key_array.index("  K  ")
+    player_found = player_array.index("  P  ")
+    exit_found = exit_array.index("  E  ")
+
     if user_input == "W":
         array[player][player_found] = "  -  "
         array[player-1][player_found] = "  P  " 
